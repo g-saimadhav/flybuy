@@ -1,6 +1,6 @@
 var mongoose =require('mongoose');
 
-var productschema = new mongoose.Schema({
+var laptopSchema = new mongoose.Schema({
     name: String,
     model: String,
     specifications:{
@@ -12,3 +12,5 @@ var productschema = new mongoose.Schema({
     },
     price:Number,
 });
+
+mongoose.model('laptop', laptopSchema); // Register the schema
