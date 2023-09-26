@@ -68,13 +68,13 @@ html
               .menu-item-image1.d-flex.flex-column.justify-content-end.p-3
                 h1.menu-card-title Smart Headphones
                 p.banner-caption Headphones with Deep Bass, sound, touch...
-                button.custom-outline-button View All
+                a.custom-outline-button.p-3.pl-5(href="#headphoneItems") View All
           .col-12.col-md-6
             .shadow.menu-item-card.p-3.mb-3
               .menu-item-image2.d-flex.flex-column.justify-content-end.p-3
                 h1.menu-card-title Laptops
                 p.banner-caption Explore vast selection of Laptops..
-                a.custom-outline-button(href="#productItem") View All
+                a.custom-outline-button.p-3.pl-5(href="#laptopItems") View All
     .delivery-and-payment-section.pt-5.pb-5#deliveryPaymentSection
       .container
         .row
@@ -116,6 +116,47 @@ html
                 | View All
                 svg(width="16px", height="16px", viewBox="0 0 16 16", class="bi bi-arrow-right", fill="#d0b200", xmlns="http://www.w3.org/2000/svg")
                   path(fill-rule="evenodd", d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z")
+    
+    #laptopItems    
+      .container
+        .row
+          .col-12.d-flex.flex-row.justify-content-center
+            .product
+              .d-flex.flex-column.justify-content-center
+                img(src="https://in-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/6/8/689U4PA-1_T1680317605.png", alt="Product 1")
+                div
+                  p HP Laptop 15s, AMD Ryzen 5 5500U, 15.6-inch (39.6 cm), FHD, 8GB DDR4, 512GB SSD, AMD Radeon Graphics, Thin & Light, Dual Speakers (Win 11, MSO 2021, Silver, 1.69 kg), eq2223AU
+                  span.price Rs 60000
+                  button.buy-button Add to Cart
+
+            .product
+              .d-flex.flex-column.justify-content-center
+                img(src="https://i.pinimg.com/originals/4d/7c/c9/4d7cc9dc05113e97600e294c4b070f13.png", alt="Product 2")
+                div
+                  p ASUS [SmartChoice] Vivobook 16X (2022), 16-inch (40.64 cms) WUXGA, AMD Ryzen 5 5600H, Thin and Light Laptop (8GB/512GB SSD/Integrated Graphics/Win 11/Office 2021/Quiet Blue/1.8 kg), M1603QA-MB502WS
+                  div
+                    span.price Rs 80000
+                    button.buy-button Add to Cart
+    #headphoneItems     
+      .container
+        .row
+          .col-12.d-flex.flex-row.justify-content-center
+            .product
+              .d-flex.flex-column.justify-content-center
+                img(src="https://cdn.hmv.com/r/w-1280/hmv/files/49/492c6edd-26b2-41cc-8a22-1d25ab0fdea1.jpg", alt="Product 1")
+                div
+                  p Sony WH-1000XM5 Wireless Industry Leading Active Noise Cancelling Headphones, 8 Mics for Clear Calling, 40Hr Battery, 3 Min Quick Charge = 3 Hours Playback, Multi Point Connectivity, Alexa - Black out of 5 stars 9,649 
+                  span.price Rs 8,999
+                  button.buy-button Add to Cart
+
+            .product
+              .d-flex.flex-column.justify-content-center
+                img(src="https://rukminim1.flixcart.com/image/1408/1408/headphone/on-the-ear/9/g/s/boat-rockerz-400-original-imaejzx69abdhtza.jpeg?q=90", alt="Product 2")
+                div
+                  p boAt Rockerz 450 Bluetooth On Ear Headphones with Mic, Upto 15 Hours Playback, 40MM Drivers, Padded Ear Cushions, Integrated Controls and Dual Modes(Luscious Black)
+                  div
+                    span.price Rs 1,499
+                    button.buy-button Add to Cart 
     .follow-us-section.pt-5.pb-5#followUsSection
       .container
         .row
@@ -129,22 +170,7 @@ html
                 i.fab.fa-instagram.icon
               .follow-us-icon-container
                 i.fab.fa-facebook.icon
-            
-     .container#productItems
-        div.product
-            img(src="https://in-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/6/8/689U4PA-1_T1680317605.png", alt="Product 1")
-            h2 Product 1
-            p HP Laptop 15s, AMD Ryzen 5 5500U, 15.6-inch (39.6 cm), FHD, 8GB DDR4, 512GB SSD, AMD Radeon Graphics, Thin & Light, Dual Speakers (Win 11, MSO 2021, Silver, 1.69 kg), eq2223AU
-            span.price Rs 60000
-            button.buy-button Add to Cart
-
-        div.product
-            img(src="https://i.pinimg.com/originals/4d/7c/c9/4d7cc9dc05113e97600e294c4b070f13.png", alt="Product 2")
-            h2 Product 2
-            p ASUS [SmartChoice] Vivobook 16X (2022), 16-inch (40.64 cms) WUXGA, AMD Ryzen 5 5600H, Thin and Light Laptop (8GB/512GB SSD/Integrated Graphics/Win 11/Office 2021/Quiet Blue/1.8 kg), M1603QA-MB502WS
-            span.price Rs 80000
-            button.buy-button Add to Cart
-
+    
     .footer-section.pt-5.pb-5
       .container
         .row

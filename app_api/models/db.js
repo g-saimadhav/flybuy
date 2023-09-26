@@ -3,7 +3,7 @@ require('dotenv').config();
 const PORT = process.env.port || 3000;
 
 var gracefulShutdown;
-const dbURI =  "mongodb://0.0.0.0:27017/";
+const dbURI =  "mongodb://0.0.0.0:27017/flybuy";
 if (process.env.NODE_ENV === 'productions'){
     dbURI = process.env.MONGODB_URI;
 }
