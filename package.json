@@ -12,6 +12,7 @@
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "http-errors": "~1.6.3",
     "jade": "^0.29.0",
@@ -22,7 +23,6 @@
   },
   "description": "\u0000#\u0000 \u0000f\u0000l\u0000y\u0000b\u0000u\u0000y\u0000n\u0000e\u0000w\u0000\r\u0000 \u0000#\u0000 \u0000f\u0000l\u0000y\u0000b\u0000u\u0000y\u0000n\u0000e\u0000w\u0000\r\u0000 \u0000",
   "main": "app.js",
-  "devDependencies": {},
   "keywords": [],
   "author": "",
   "license": "ISC"
