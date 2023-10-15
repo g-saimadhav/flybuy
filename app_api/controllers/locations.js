@@ -27,3 +27,25 @@ var sendJsonResponse = function(res, status, content) {
     module.exports.locationsDeleteOne = function (req, res) {
     sendJsonResponse(res, 200, {"status" : "success"});
     };
+
+    module.exports.locationsCreate = function (req, res) {
+        console.log(req.body);
+        const { name, model,ram,color,processor,size,weight,price} = req.body;
+        const newLocation = {
+            name,
+            model,
+            specifications: [
+                { ram:ram,color:color,processor:processor,size:size,weight:weight}
+            ],
+            price
+        };
+        Loc.create(newLocation)
+            .then((location) => {
+                console.log('Location created:', location);
+                return res.status(201).json(location);
+            })
+            .catch((err) => {
+                console.error(err);
+                return res.status(400).json({ error: 'Could not create location' });
+            });
+    };

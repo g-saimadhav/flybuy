@@ -18,3 +18,4 @@ mongoose.connection.on('error', function (err) { console.log('Mongoose connectio
 mongoose.connection.on('disconnected', function () { console.log('Mongoose disconnected'); 
 }); 
 require('./locations');
+
